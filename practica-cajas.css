@@ -1,0 +1,21 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+.contenedor {
+  background-color: lightgray;
+}
+
+.caja {
+  /* display: inline-block; */
+  width: 100px;
+  padding: 10px;
+  height: 20px;
+  background-color: lightblue;
+}
+
+span {
+  background-color: lightgreen;
+}
