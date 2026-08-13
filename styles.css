@@ -24,6 +24,17 @@ ul {
   margin: 0 auto;
 }
 
+.categories {
+  display: flex;
+  gap: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -53,6 +64,13 @@ h1 {
 .card {
   width: 320px;
   border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.card-category {
+  text-align: center;
+  background-color: lightgray;
 }
 
 .card-content {
