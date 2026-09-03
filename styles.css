@@ -24,11 +24,6 @@ ul {
   margin: 0 auto;
 }
 
-.categories {
-  display: flex;
-  gap: 20px;
-}
-
 .section-title {
   text-align: center;
   margin: 20px 0;
@@ -37,6 +32,8 @@ ul {
 
 .header-content {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -57,22 +54,89 @@ h1 {
 
 .section-destacados {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
 }
 
 .card {
-  width: 320px;
+  width: 90%;
   border: 1px solid #ccc;
   padding: 30px;
   border-radius: 5px;
 }
 
-.card-category {
-  text-align: center;
-  background-color: lightgray;
-}
-
 .card-content {
   padding: 10px;
+}
+
+/* Categories */
+
+.categories h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-card {
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 150px; */
+
+  /* flex: 1; */
+
+  width: 100%;
+
+  /* width: 100px;
+  height: 100px; */
+
+  padding: 30px 20px;
+
+  text-align: center;
+
+  background-color: #fff7fb;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.category-icon {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+  }
+
+  .category-card {
+    width: 45%;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+
+  .category-card {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 20%;
+  }
 }
